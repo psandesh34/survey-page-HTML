@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
 
-    <body class="sample">
+    <body>
         <header id="header">
             <div id="nav-bar">
                 <div class="flex-item logoSection">
@@ -51,72 +51,98 @@
                     </a>
                 </div>
         </header>
-        <div class="content">
-            <div class="info">
-                <div class="title">Learn Programming <span class="gradientText">Interactively</spa>
-                </div>
-                <div class="description">
-                    <div>
-                        Build projects, practice and learn to code from scratch - without leaving your browser.
+        <div class="sample">
+            <div class="content">
+                <div class="contentData">
+                    <div class="title">Learn Programming <span class="gradientText">Interactively</spa>
                     </div>
-                </div>
-                <div class="exploreButton flex-item">
-                    <a href="https://codedamn.com/register">
-                        <div class="">
-                            Explore All Roadmaps
+                    <div class="description">
+                        <div>
+                            Build projects, practice and learn to code from scratch - without leaving your browser.
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="signUpSection">
-                <form action="#">
-                    <div class="signUpForm">
-                        <div>Sign up with</div>
-                        <div class="authOptions">
-                            <!-- <div class="flex-item authOption">Google</div> -->
-                            <div class="flex-item authOption"><img src="./assets/google.png" alt=""
-                                    height="25px" /></div>
-                            <div class="flex-item authOption"><img src="./assets/github.png" alt=""
-                                    height="30px" /></div>
-                            <!-- <div class="flex-item authOption">GitHub</div> -->
-                        </div>
-                        <div class="partition">
-                            <div>
-                                <hr>
-                            </div>
-                            <div class="partitionText">
-                                Or continue with
-                            </div>
-                            <div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="InputSection">
-                            <div>Name</div>
-                            <input type="text" class="formInput" placeholder="Enter your name" />
-                        </div>
-                        <div class="InputSection">
-                            <div>Username</div>
-                            <input type="text" class="formInput"
-                                placeholder="Only alphanumeric characters allowed [a-z, A-Z, 0-9]" />
-                            <i style="color: #afafaf">Once set, username cannot be changed
-                            </i>
-                        </div>
-                        <div class="InputSection">
-                            <div>Email Address</div>
-                            <input type="email" class="formInput" placeholder="Enter your email address" required/>
-                        </div>
-                        <div class="InputSection">
-                            <div>Password</div>
-                            <input class="formInput" placeholder="Enter your password" type="password" required/>
-                        </div>
+                    </div>
+                    <div class="exploreButton flex-item">
                         <a href="https://codedamn.com/register">
-                            <input type="submit" value="Let's go!" class="sampleButtpn flex-item">
+                            <div class="">
+                                Explore All Roadmaps
+                            </div>
                         </a>
                     </div>
-                </form>
+                </div>
+                <div class="signUpSection">
+                    <form action="https://www.freecodecamp.com/email-submit" method="post">
+                        <div class="signUpForm">
+                            <div>Sign up with</div>
+                            <div class="authOptions">
+                                <div class="flex-item authOption"><img src="./assets/google.png" alt="" height="25px" />
+                                </div>
+                                <div class="flex-item authOption"><img src="./assets/github.png" alt="" height="30px" />
+                                </div>
+                            </div>
+                            <div class="partition">
+                                <div>
+                                    <hr>
+                                </div>
+                                <div class="partitionText">
+                                    Or continue with
+                                </div>
+                                <div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="InputSection">
+                                <div>Name</div>
+                                <input type="text" class="formInput" placeholder="Enter your name" />
+                            </div>
+                            <div class="InputSection">
+                                <div>Username</div>
+                                <input type="text" class="formInput"
+                                    placeholder="Only alphanumeric characters allowed [a-z, A-Z, 0-9]" />
+                                <i style="color: #afafaf">Once set, username cannot be changed
+                                </i>
+                            </div>
+                            <div class="InputSection">
+                                <div>Email Address</div>
+                                <input type="email" id="email" class="formInput" placeholder="Enter your email address" />
+                            </div>
+                            <div class="InputSection">
+                                <div>Password</div>
+                                <input class="formInput" placeholder="Enter your password" type="password" />
+                            </div>
+                            <a href="https://codedamn.com/register">
+                                <input type="submit" value="Let's go!" class="sampleButtpn flex-item">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="videoDiv">
+                <div class="videoDescription">
+                    <div class="catchPhrase">
+                        <strong>GET OUT OF TUTORIAL HELL</stron>
+                    </div>
+                    <div class="title">
+                        Videos are so 2008-ish...
+                    </div>
+                </div>
+                <div class="videoInfo">
+                    <div class="info">
+                        You have read about "Practice makes a man perfect", but you still learn by watching hours of
+                        videos.
+                        <br>
+                        For the first time ever, you can experience an interactive course completely online - a perfect
+                        blend of theory and practice right inside your browser.
+                        <br>
+                        10x more engaging, higher quality, cheaper, and a stellar experience for visual learners.
+                    </div>
+                    <div>
+                        <iframe height="500" width="850" src="https://www.youtube.com/embed/HxvdIb7MXCA"
+                            title="YouTube video player" frameborder="0"  class="actualVideo"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
-
 </html>

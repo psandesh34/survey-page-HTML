@@ -1,6 +1,6 @@
 :root {
     --gray-border: #484848;
-    --input-black:  #171717;
+    --input-black: #171717;
     --placeHolderColor: #7c7c7c;
 }
 
@@ -65,7 +65,7 @@ a {
 }
 
 .account-button {
-    background-color: #377BD2;
+    background-color: #377bd2;
     border-radius: 7.5px;
     height: 45px;
     padding: 0 20px;
@@ -79,21 +79,21 @@ a {
 .content {
     display: flex;
     flex-direction: row;
-    height: 650px;
+    max-width: 100%;
     padding: 175px 260px 0px 100px;
     justify-content: space-between;
 }
 
-.info {
+.contentData {
     display: flex;
     flex-direction: column;
-    width: 510px;
+    min-width: 510px;
 }
 
 .title {
     font-size: 4rem;
     font-weight: bold;
-    font-family: 'Inter', Times, serif;
+    font-family: "Inter", Times, serif;
     letter-spacing: 0px;
     padding-top: 80px;
     line-height: 1.1;
@@ -112,17 +112,18 @@ a {
 }
 
 .exploreButton {
-    background-color: #377BD2;
+    background-color: #377bd2;
     border-radius: 7.5px;
     height: 60px;
     padding: 0 20px;
 }
 
 .signUpSection {
-    width: 510px;
+    min-width: 510px;
     border: var(--gray-border) solid 1px;
     border-radius: 10px;
     padding: 25px;
+    margin-bottom: 50px;
 }
 
 .signUpForm {
@@ -134,7 +135,7 @@ a {
 .authOptions {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px
+    gap: 10px;
 }
 
 .authOption {
@@ -156,6 +157,7 @@ a {
 
 .partitionText {
     padding-left: 10px;
+    white-space: nowrap;
 }
 
 .InputSection {
@@ -185,4 +187,80 @@ hr {
     background-color: #293fd1;
     color: white;
     width: 100%;
+}
+
+.videoDiv {
+    background-color: #f5f5f5;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 100px 50px 200px 50px;
+    gap: 50px;
+}
+
+.catchPhrase {
+    color: #ea580c;
+    font-size: 1.5rem;
+}
+.videoDescription > .title {
+    padding-top: 25px;
+}
+
+.videoInfo {
+    display: flex;
+    /* grid-template-rows: 1fr 1fr; */
+    flex-direction: row;
+    gap: 25px;
+}
+.info {
+    padding-top: 25px;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #nav-bar {
+        padding: 20px 20px 20px 20px;
+    }
+    .content {
+        padding: 175px 20px 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    #nav-bar {
+        padding: 20px 20px 20px 20px;
+    }
+    .content {
+        padding: 175px 20px 0px 20px;
+        flex-direction: column;
+        padding: 100px 20px 0px 20px;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .sample {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoInfo {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .actualVideo {
+        width: 40rem;
+        height: 27rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .contentData {
+        max-width: 510px;
+    }
+
+    .info {
+        max-width: 40%;
+    }
 }
